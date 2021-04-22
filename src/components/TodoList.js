@@ -1,6 +1,9 @@
 import Todo from "./Todo";
+import { useMainContext } from "./Context/ContextProvider";
 
-const TodoList = ({ todos, setTodos, filteredTodos }) => {
+const TodoList = () => {
+  const { todos, setTodos, filteredTodos } = useMainContext();
+
   return (
     <div className="todo-container">
       <ul className="todo-list">

@@ -1,6 +1,15 @@
 import nextId from "react-id-generator";
+import { useMainContext } from "./Context/ContextProvider";
 
-const TodoForm = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
+const TodoForm = () => {
+  const {
+    inputText,
+    setInputText,
+    todos,
+    setTodos,
+    setStatus,
+  } = useMainContext();
+
   const inputTextHandler = (e) => {
     setInputText(e.target.value);
   };
