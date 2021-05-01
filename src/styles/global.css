@@ -141,3 +141,32 @@ select {
   transform: scale(1.5);
 }
 */
+
+@media screen and (max-width: 768px) {
+  .App {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .Form-submit {
+    display: flex;
+    justify-content: center;
+  }
+
+  input {
+    max-width: 60%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
